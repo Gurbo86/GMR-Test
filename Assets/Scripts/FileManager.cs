@@ -1,14 +1,13 @@
-﻿using System;
-using System.IO;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.IO;
 using UnityEngine;
 using SimpleJSON;
 
 public class FileManager : MonoBehaviour
 {
-    private static FileManager _instance;
 
+    #region Singleton
+
+    private static FileManager _instance;
     public static FileManager Instance
     {
         get
@@ -28,6 +27,8 @@ public class FileManager : MonoBehaviour
             return _instance;
         }
     }
+
+    #endregion
 
     public string fileName = "JsonChallenge.json";
 

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using SimpleJSON;
@@ -16,6 +15,29 @@ public class TableController : MonoBehaviour
 
     private JSONNode tableData;
     private List<RowController> rows;
+    private int activeRows;
+
+    private RowController GetRow()
+    {
+        RowController controller;
+
+        if (rows.Count <= activeRows)
+        {
+            GameObject cell = Instantiate(rowPrefab, Vector3.zero, Quaternion.identity);
+            cell.transform.SetParent(content);
+            controller = cell.GetComponent<RowController>();
+            rows.Add(controller);
+            activeRows++;
+        }
+        else
+        {
+            controller = rows[activeRows];
+            controller.gameObject.SetActive(true);
+            activeRows++;
+        }
+
+        return controller;
+    }
 
     private void LoadTitle()
     {
@@ -25,18 +47,9 @@ public class TableController : MonoBehaviour
         }
     }
 
-    private RowController AddRow()
-    {
-        GameObject cell = Instantiate(rowPrefab, Vector3.zero, Quaternion.identity);
-        RowController controller = cell.GetComponent<RowController>();
-        cell.transform.SetParent(content);
-        rows.Add(controller);
-        return controller;
-    } 
-
     private void LoadHeader()
     {
-        RowController header = AddRow();
+        RowController header = GetRow();
         header.SetAsHeader(true);
         if (tableData.HasKey(COLUMNS))
         {
@@ -61,7 +74,7 @@ public class TableController : MonoBehaviour
             {
                 for (int i = 0; i < tableData[DATA].Count; i++)
                 {
-                    row = AddRow();
+                    row = GetRow();
                     for (int j = 0; j < tableData[COLUMNS].Count; j++)
                     {
                         columnAux = tableData[COLUMNS][j];
@@ -82,16 +95,33 @@ public class TableController : MonoBehaviour
 
     public void LoadTable()
     {
+        foreach (RowController row in rows)
+        {
+            row.Clear();
+            row.gameObject.SetActive(false);
+            activeRows--;
+        }
+
         LoadTable(FileManager.Instance.GetJson());
     }
+
+    public void CloseProgram()
+    {
+        Application.Quit();
+    }
+
+    #region Monobehaviour Methods
 
     void Awake()
     {
         rows = new List<RowController>();
+        activeRows = 0;
     }
 
     void Start()
     {
         LoadTable(FileManager.Instance.GetJson());
     }
+
+    #endregion
 }

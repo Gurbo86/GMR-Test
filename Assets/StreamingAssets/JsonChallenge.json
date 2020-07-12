@@ -4,146 +4,32 @@
     "ID",
     "Name",
     "Role",
-    "Nickname",
-    "Nickname2",
-    "Nickname3",
-    "Nickname4"
+    "Nickname"
   ],
   "Data": [
     {
       "ID": "001",
       "Name": "John Doe",
       "Role": "Engineer",
-      "Nickname": "KillerJo",
-      "Nickname2": "Claw",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "Sue5555"
+      "Nickname": "KillerJo"
     },
     {
       "ID": "023",
       "Name": "Claire Dawn",
       "Role": "Engineer",
-      "Nickname": "Claw",
-      "Nickname2": "KillerJo",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "Sue5555"
+      "Nickname": "Claw"
     },
     {
       "ID": "012",
       "Name": "Paul Beef",
       "Role": "Designer",
-      "Nickname": "BeefyPaul",
-      "Nickname2": "Claw",
-      "Nickname3": "KillerJo",
-      "Nickname4": "Sue5555"
+      "Nickname": "BeefyPaul"
     },
     {
       "ID": "056",
       "Name": "Sally Sue",
       "Role": "Artist",
-      "Nickname": "Sue5555",
-      "Nickname2": "Claw",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "KillerJo"
-    },
-    {
-      "ID": "056",
-      "Name": "Sally Sue",
-      "Role": "Artist",
-      "Nickname": "Sue5555",
-      "Nickname2": "Claw",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "KillerJo"
-    },
-    {
-      "ID": "056",
-      "Name": "Sally Sue",
-      "Role": "Artist",
-      "Nickname": "Sue5555",
-      "Nickname2": "Claw",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "KillerJo"
-    },
-    {
-      "ID": "056",
-      "Name": "Sally Sue",
-      "Role": "Artist",
-      "Nickname": "Sue5555",
-      "Nickname2": "Claw",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "KillerJo"
-    },
-    {
-      "ID": "056",
-      "Name": "Sally Sue",
-      "Role": "Artist",
-      "Nickname": "Sue5555",
-      "Nickname2": "Claw",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "KillerJo"
-    },
-    {
-      "ID": "056",
-      "Name": "Sally Sue",
-      "Role": "Artist",
-      "Nickname": "Sue5555",
-      "Nickname2": "Claw",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "KillerJo"
-    },
-    {
-      "ID": "056",
-      "Name": "Sally Sue",
-      "Role": "Artist",
-      "Nickname": "Sue5555",
-      "Nickname2": "Claw",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "KillerJo"
-    },
-    {
-      "ID": "056",
-      "Name": "Sally Sue",
-      "Role": "Artist",
-      "Nickname": "Sue5555",
-      "Nickname2": "Claw",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "KillerJo"
-    },
-    {
-      "ID": "056",
-      "Name": "Sally Sue",
-      "Role": "Artist",
-      "Nickname": "Sue5555",
-      "Nickname2": "Claw",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "KillerJo"
-    },
-    {
-      "ID": "056",
-      "Name": "Sally Sue",
-      "Role": "Artist",
-      "Nickname": "Sue5555",
-      "Nickname2": "Claw",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "KillerJo"
-    },
-    {
-      "ID": "056",
-      "Name": "Sally Sue",
-      "Role": "Artist",
-      "Nickname": "Sue5555",
-      "Nickname2": "Claw",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "KillerJo"
-    },
-    {
-      "ID": "056",
-      "Name": "Sally Sue",
-      "Role": "Artist",
-      "Nickname": "Sue5555",
-      "Nickname2": "Claw",
-      "Nickname3": "BeefyPaul",
-      "Nickname4": "KillerJo"
+      "Nickname": "Sue5555"
     }
   ]
 }
